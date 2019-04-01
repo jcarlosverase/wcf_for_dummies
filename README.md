@@ -46,7 +46,7 @@ Usaremos las siguientes herramientas de Microsoft en sus versiones gratuitas:
    Y ya tenemos la base de datos lista.
    ¿Fácil verdad?, clic por acá, clic derecho por allá, tranquilo lo que viene te hará sentir un Tony Stark.
 
-2. Crear el Servicio WCF.
+### 2. Crear el Servicio WCF.
 
 - Lo obvio, es necesario abrir el programa: Visual Studio.
 - Creamos el proyecto: WCF_DocenteService.
@@ -73,7 +73,7 @@ Método: EliminarDocente
    Y bien, hemos terminado nuestro servicio WCF.
 ¿Fácil o difícil?, tranquilo lo que viene es sencillo, no es común implementar un proyecto de pruebas unitarias, pero es muy recomendable, sobre todo si queremos automatizar nuestras pruebas y agilizar la puesta en marcha.
 
-3. Crear el Unit Test.
+### 3. Crear el Unit Test.
 
 - Ya estamos en Visual Studio, agreguemos un nuevo proyecto a la solución: WCF_DocenteServiceTest.
 - Cambiamos el nombre de la clase creada por defecto: De “UnitTest1.cs” a “UnitTestDocente.cs”.
