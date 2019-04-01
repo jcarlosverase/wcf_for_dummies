@@ -6,7 +6,7 @@ Descargar en PDF: https://drive.google.com/file/d/1wsJ0F_njLf6DoFTOyFHTdw7YQTHT5
 
 Debido a que el target son personas interesadas en conocer WCF, no necesariamente profesionales de TI o developers, intentaré explicar paso a paso y de forma simple como crear su primer servicio con WCF o al menos espero lograrlo.
 
-¿Qué lograremos?, para saber si debo continuar
+## ¿Qué lograremos?, para saber si debo continuar
 
 A pesar que haremos algo básico, creo que les será muy útil, ya sea que solo quieran saber “¿Cómo se hace?” o quieran profundizar y usarlo como plantilla, pues he tratado de utilizar “algunas” buenas prácticas en cuanto a código y nomenclaturas, no verán nombres como “Protecto1” o “MiClase”.
 
@@ -15,14 +15,14 @@ Luego de la implementación obtendremos lo siguiente:
 2. Servicio WCF, para conectarse a la base de datos y retornar la información requerida.
 3. Unit Test, para probar el correcto funcionamiento de los servicios creados.
 
-¿Qué problema resolveremos?, el objetivo práctico
+## ¿Qué problema resolveremos?, el objetivo práctico
 
 El alcance de lo que desarrollaremos es crear la funcionalidad básica de un servicio web.
 Como cualquier servicio web, usaremos una entidad u objeto de negocio y crearemos un CRUD o en español Crear, Leer, Actualizar y Borrar.
 Para este caso usaremos “Docente” extraída de un proceso de matrículas.
 Para lograrlo necesitamos, entre leer, asistentes y su facilidad para codear, un aproximado de 30-45 minutos 
 
-¿Qué es WCF?, empezamos por lo aburrido
+## ¿Qué es WCF?, empezamos por lo aburrido
 
 Windows Communication Foundation o simplemente WCF está diseñado para ofrecer un enfoque manejable a la informática distribuida, interoperabilidad ancha y asistencia directa para la orientación sobre el servicio. WCF permite describir, publicar, implementar y consumir servicios, no solo con la interoperabilidad de los Web Services entre plataformas servidor y cliente, sino también utilizando diferentes plataformas de transporte de forma transparente al resto de la arquitectura.
 
@@ -34,9 +34,9 @@ Usaremos las siguientes herramientas de Microsoft en sus versiones gratuitas:
 - SQL Server 2017, descarga: https://www.microsoft.com/es-es/sql-server/sql-server-editions-express
 - Visual Studio 2017, descarga: https://visualstudio.microsoft.com/es/vs/community/
 
-Desarrollo, ahora si empieza lo divertido, para algunos
+## Desarrollo, ahora si empieza lo divertido, para algunos
 
-1. Crear la base de datos.
+### 1. Crear la base de datos.
 
 - Sí, es necesario abrir el programa: SQL Server Management Studio.
 - Creamos la base de datos: BD_AsistenteMatricula.
@@ -83,7 +83,7 @@ Método: EliminarDocente
 - Finalmente, ejecutamos las pruebas de ambos test.
 - Si nos muestra un check verde quiere decir que está funcionando correctamente.
 
-Conclusiones, hemos terminado
+## Conclusiones, hemos terminado
 
 - De la implementación, siento, he confirmado y creo que ustedes también que es muy sencillo crear servicios con WCF que conectan a una base de datos y con pruebas unitarias para asegurar el correcto funcionamiento, invirtiendo poco tiempo. 
 - De las herramientas, como ya es conocido Microsoft ofrece aplicaciones fáciles de usar y gratis, aunque las mejores versiones son de pago.
