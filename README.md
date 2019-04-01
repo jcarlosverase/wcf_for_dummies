@@ -1,6 +1,6 @@
 ﻿Tutorial: Desarrollando un Servicio SOAP sobre WCF para Dummies
 
-Descargar: https://drive.google.com/file/d/1wsJ0F_njLf6DoFTOyFHTdw7YQTHT5Sy_/view?usp=sharing
+Descargar en PDF: https://drive.google.com/file/d/1wsJ0F_njLf6DoFTOyFHTdw7YQTHT5Sy_/view?usp=sharing
 
 Una breve intro
 
