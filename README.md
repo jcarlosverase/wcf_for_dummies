@@ -1,5 +1,7 @@
 ﻿Tutorial: Desarrollando un Servicio SOAP sobre WCF para Dummies
 
+Descargar: https://drive.google.com/file/d/1wsJ0F_njLf6DoFTOyFHTdw7YQTHT5Sy_/view?usp=sharing
+
 Una breve intro
 
 Debido a que el target son personas interesadas en conocer WCF, no necesariamente profesionales de TI o developers, intentaré explicar paso a paso y de forma simple como crear su primer servicio con WCF o al menos espero lograrlo.
@@ -37,25 +39,9 @@ Desarrollo, ahora si empieza lo divertido, para algunos
 1. Crear la base de datos.
 
 - Sí, es necesario abrir el programa: SQL Server Management Studio.
-
-
 - Creamos la base de datos: BD_AsistenteMatricula.
-
-
-
-
-
 - Creamos la tabla: TB_Docente, campos: NU_IdDocente, TX_Nombres, TX_Apellidos, TX_Dni, TX_Estado.
-
-
-
-
-
 - Insertamos un registro, no necesariamente los mismos datos.
-
-
-
-
 
    Y ya tenemos la base de datos lista.
    ¿Fácil verdad?, clic por acá, clic derecho por allá, tranquilo lo que viene te hará sentir un Tony Stark.
@@ -63,80 +49,26 @@ Desarrollo, ahora si empieza lo divertido, para algunos
 2. Crear el Servicio WCF.
 
 - Lo obvio, es necesario abrir el programa: Visual Studio.
-
-
-
 - Creamos el proyecto: WCF_DocenteService.
-
-
-
-
-
 - Eliminamos el código que nos crea por defecto, no sirve.
-
-
-
 - Agregamos un Servicio WCF: DocenteService.svc.
-
-
-
-
-
 - Creamos la siguiente estructura de Carpetas y Clases:
 Dominio - Docente.cs
 Errores - Repetido.cs
 Persistencia – DocenteDAO.cs
-
-
-
 - Ahora si a codear, empecemos por la clase del objeto de negocio: Docente.cs.
 - Luego la clase que conecta a la base de datos: DocenteDAO.cs.
 - Continuamos con la clase que usaremos para el manejo de errores: RepetidoException.cs.
 - Ahora el servicio, empecemos por la clase o interfaz que define el contrato y operaciones del servicio: IDocenteService.cs.
 - Finalmente implementamos el servicio y sus operaciones: DocenteService.svc.cs.
 - Compilamos el proyecto para que nuestro servicio se ejecute en nuestro servidor de aplicaciones IIS.
-
-
-
-
-
-
-
 - Visualizamos el servicio en el explorador de internet.
-
-
-
-
-
 - Realizamos pruebas desde el cliente WCF: Depurar – Iniciar depuración o F5.
-
-
-
 Método: CrearDocente
-
-
-
-
-
 Método: ObtenerDocente
-
-
-
 Método: ModificarDocente
-
-
-
-
-
 Método: ListarDocentes
-
-
-
 Método: EliminarDocente
-
-
-
-
 
    Y bien, hemos terminado nuestro servicio WCF.
 ¿Fácil o difícil?, tranquilo lo que viene es sencillo, no es común implementar un proyecto de pruebas unitarias, pero es muy recomendable, sobre todo si queremos automatizar nuestras pruebas y agilizar la puesta en marcha.
@@ -144,31 +76,12 @@ Método: EliminarDocente
 3. Crear el Unit Test.
 
 - Ya estamos en Visual Studio, agreguemos un nuevo proyecto a la solución: WCF_DocenteServiceTest.
-
-
-
-
-
-
 - Cambiamos el nombre de la clase creada por defecto: De “UnitTest1.cs” a “UnitTestDocente.cs”.
-
-
-
 - Agregamos una referencia de servicio: DocenteWS.
-
-
-
-
-
 - Nuevamente a codear, empecemos por la prueba de creación: TestCrearDocente.
 - Finalmente, la prueba de creación con excepción o error: TestCrearDocenteRepetido.
 - Finalmente, ejecutamos las pruebas de ambos test.
-
-
-
 - Si nos muestra un check verde quiere decir que está funcionando correctamente.
-
-
 
 Conclusiones, hemos terminado
 
